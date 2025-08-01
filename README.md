@@ -7,6 +7,10 @@ This project was developed as a **2nd Year End of Semester Project** for our **S
 - Supports **Role-Based Access** (User & Admin)
 - Is themed around **University Alumni**
 
+To Access Admin: 
+a2@gmail.com
+123456
+
 ---
 
 ## 👥 Team Members

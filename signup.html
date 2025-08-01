@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!--Links-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="navigation">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            </div>
+
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <ul class="ul-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-buttons">
+                    <button type="button" class="btns" onclick="window.location.href='login.html'">Log in</button>
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="dropdown-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button type="button" class="btns " 
+                onclick="window.location.href='login.html'">Log in</button></li>
+            <li><button type="button" class="btns  bg-black text-white" 
+                onclick="window.location.href='signup.html'">Sign up</button></li>
+        </div>
+    </nav>
+    
+    <!--Sign up Form-->
+
+    <div class="registration-form flex flex-col justify-center items-center px-16 py-12 max-md:px-5">
+        <div class="flex w-[768px] max-w-full flex-col mt-3.5">
+
+            <div class="self-center text-black text-5xl font-bold leading-[57.6px] max-md:max-w-full max-md:text-4xl">
+                <h1>Join the Alumni Network</h1>
+            </div>
+
+            <div class="self-center text-black text-lg leading-7 mt-6 max-md:max-w-full">
+                Please fill out the form below to register as an alumni.
+            </div>
+
+<form action="submit" id="signupForm" method="post" class="mt-10">
+    <!-- Account Info -->
+    <label class="text-black text-4xl font-bold leading-[54px] max-md:max-w-full max-md:mt-10">Account Information</label>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="email" class="text-black text-base leading-6 block">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="phoneNumber" class="text-black text-base leading-6 block">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="03xxxxxxxxx" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="password" class="text-black text-base leading-6 block">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+        <div class="flex grow basis-[0%] flex-col mb-14 max-md:mb-10">
+            <label for="confirmPassword" class="text-black text-base leading-6 block">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+    </div>
+
+    <!-- Personal Info -->
+    <label class="text-black text-4xl font-bold leading-[54px] max-md:max-w-full">Personal Information</label>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="firstName" class="text-black text-base leading-6 block">First Name</label>
+<input type="text" id="firstName" name="firstName" placeholder="First Name" required pattern="^[A-Za-z\s]+$"
+class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="lastName" class="text-black text-base leading-6 block">Last Name</label>
+<input type="text" id="lastName" name="lastName" placeholder="Last Name" required pattern="^[A-Za-z\s]+$"
+class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="fatherName" class="text-black text-base leading-6 block">Father Name</label>
+<input type="text" id="fatherName" name="fatherName" placeholder="Father Name" required pattern="^[A-Za-z\s]+$"
+class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="dob" class="text-black text-base leading-6 block">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="gender" class="text-black text-base leading-6 block">Gender</label>
+            <select id="gender" name="gender" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="permanentAddress" class="text-black text-base leading-6 block">Permanent Address</label>
+            <input type="text" id="permanentAddress" name="permanentAddress" placeholder="Address" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="regNo" class="text-black text-base leading-6 block">Registration Number</label>
+<input type="text" id="regNo" name="regNo" required placeholder="21PWBXX0000"
+pattern="^\d{2}(PWB|ABT|KHT|BNU|LDR)[A-Z]{2}\d{4}$"
+title="Format: 21PWBCS0874 (YY + CampusCode + DeptCode + Roll No)"
+class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black uppercase">
+        </div>
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="graduationYear" class="text-black text-base leading-6 block">Graduation Year</label>
+            <select id="graduationYear" name="graduationYear" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+                <option value="" disabled selected>Select Year</option>
+                <!-- JS will populate options -->
+            </select>
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="campus" class="text-black text-base leading-6 block">University Campus</label>
+            <select id="campus" name="campus" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+                <option value="" disabled selected>Select Campus</option>
+                <option value="Main">Main</option>
+                <option value="Jalozai">Jalozai</option>
+                <option value="Abbottabad">Abbottabad</option>
+                <option value="Kohat">Kohat</option>
+                <option value="Bannu">Bannu</option>
+                <option value="Lower Dir">Lower Dir</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="batch" class="text-black text-base leading-6 block">Batch</label>
+            <select id="batch" name="batch" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+                <option value="" disabled selected>Select Department</option>
+                <option>Computer Science</option>
+                <option>Software Engineering</option>
+                <option>Information Technology</option>
+                <option>Data Science</option>
+                <option>Artificial Intelligence</option>
+                <option>Electrical Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Mathematics</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>Biology</option>
+                <option>Psychology</option>
+                <option>Business Administration</option>
+                <option>Accounting & Finance</option>
+                <option>Economics</option>
+                <option>English</option>
+                <option>Sociology</option>
+                <option>Statistics</option>
+                <option>Project Management</option>
+            </select>
+        </div>
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="program" class="text-black text-base leading-6 block">Program</label>
+            <select id="program" name="program" required class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+                <option value="" disabled selected>Select Program</option>
+                <option>BS</option>
+                <option>MS</option>
+                <option>PhD</option>
+                <option>Diploma</option>
+                <option>Associate Degree</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="currentOrg" class="text-black text-base leading-6 block">Current Organization</label>
+            <input type="text" id="currentOrg" name="currentOrg" required placeholder="Systems Ltd" class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="jobTitle" class="text-black text-base leading-6 block">Job Title</label>
+            <input type="text" id="jobTitle" name="jobTitle" required placeholder="Software Engineer" class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+    </div>
+
+    <div class="flex justify-between gap-5 mt-10 max-md:max-w-full max-md:flex-wrap">
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="currentCity" class="text-black text-base leading-6 whitespace-nowrap block">Current City of Living</label>
+            <input type="text" id="currentCity" name="currentCity" required placeholder="Peshawar" class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+        <div class="flex grow basis-[0%] flex-col">
+            <label for="currentCountry" class="text-black text-base leading-6 block">Current Country of Living</label>
+            <input type="text" id="currentCountry" name="currentCountry" required placeholder="Pakistan" class="text-base leading-6 border justify-center mt-2 p-3 border-solid border-black">
+        </div>
+    </div>
+
+    <button type="submit" class="btns-2 block mt-8 bg-black text-white">Submit</button>
+</form>
+
+            <div class="text-black text-base leading-6 mt-16 max-md:max-w-full max-md:mt-10">
+                <p>Thank you for registering! We appreciate your commitment to staying
+                connected with our alumni community. Expect exciting updates and exclusive
+                opportunities soon!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+
+            <div class="footer-content">
+                
+                <div class="footer-logo">
+                    <img src="images/footer-logo.png" alt="logo">
+                </div>
+    
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Registration Form</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-socials">
+                    <div><i class="fa-brands fa-facebook fa-lg"></i></div>
+                    <div><i class="fa-brands fa-instagram fa-lg"></i></div>
+                    <div><i class="fa-brands fa-x-twitter fa-lg"></i></div>
+                    <div><i class="fa-brands fa-linkedin fa-lg"></i></div>
+                    <div><i class="fa-brands fa-youtube fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="copyright">
+                <h5>© 2023 Department of CS & IT</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+  <script src="./logic.js"></script>
+<script>
+  // Graduation Year Dropdown (1990 to current year)
+  const gradSelect = document.getElementById('graduationYear');
+  const currentYear = new Date().getFullYear();
+  for (let year = 1990; year <= currentYear; year++) {
+    const option = document.createElement('option');
+    option.value = year;
+    option.text = year;
+    gradSelect.appendChild(option);
+  }
+
+  const nameFields = ['firstName', 'lastName', 'fatherName','currentOrg', 'jobTitle', 'currentCity', 'currentCountry'];
+  nameFields.forEach(id => {
+    const input = document.getElementById(id);
+    input.addEventListener('input', () => {
+      input.value = input.value.replace(/[^a-zA-Z\s]/g, ''); // Remove everything except letters and spaces
+    });
+  });
+
+  // Validate RegNo Format
+  const form = document.getElementById('signupForm');
+  form.addEventListener('submit', (e) => {
+    const regNo = document.getElementById('regNo').value.trim().toUpperCase();
+    const regExp = /^\d{2}(PWB|ABT|KHT|BNU|LDR)[A-Z]{2}\d{4}$/;
+    if (!regExp.test(regNo)) {
+      alert("Registration Number format must be like 21PWBCS0874 (YY + Campus Code + Dept Code + Roll No)");
+      e.preventDefault();
+    }
+  });
+</script>
+
+
+</body>
+</html>

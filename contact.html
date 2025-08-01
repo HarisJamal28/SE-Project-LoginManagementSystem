@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dept. of CS&IT Alumni</title>
+    <!--Links-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="navigation">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            </div>
+
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <ul class="ul-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li id="profileNav" style="display: none;"><a href="userdashboard.html">My Profile</a></li>
+                    </ul>
+                </div>
+                <div class="nav-buttons">
+            <button id="loginNav" class="btns" onclick="window.location.href='login.html'">Log in</button>
+            <button id="signupNav" class="btns bg-black text-white" onclick="window.location.href='signup.html'">Sign up</button>
+            <button type="button" id="logoutNav" style="display: none;" class="btns bg-black text-white whitespace-nowrap" onclick="window.location.href='login.html'">Logout</button>
+
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="dropdown-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button type="button" class="btns " 
+                onclick="window.location.href='login.html'">Log in</button></li>
+            <li><button type="button" class="btns  bg-black text-white" 
+                onclick="window.location.href='signup.html'">Sign up</button></li>
+        </div>
+    </nav>
+
+    <!--Contact Div-->
+
+    <div class="contact flex flex-row max-lg:flex-wrap">
+
+        <div class="form-content w-full flex flex-col justify-center items-center ">
+
+        <div class="banner2 max-h-screen overflow-hidden">
+            <img src="images/contact-form.webp" alt="Banner Image">
+            <div class="banner-content">
+                <div class="contact-content p-5 flex flex-col justify-center items-center rounded-xl">
+
+                    <h1 class="text-3xl font-medium mb-5 max-sm:text-[20px]">Contact US</h1>
+                    <p class="w-96 max-sm:text-[12px] max-sm:w-48">Don't hesitate to reach out if you have any inquiries 
+                        or feedback. We're happy to hear from you!</p>
+                
+                    <div class="email flex gap-8 my-5 items-center w-full max-sm:my-1 max-sm:mb-3">
+                        <i class="fa-solid fa-envelope fa-2xl dsk max-sm:hidden"></i>
+                        <i class="fa-solid fa-envelope fa-md mb hidden max-sm:block"></i>
+                        <h2 class="max-sm:text-[12px]"><span class="em-span font-medium text-2xl max-sm:text-[14px]">
+                            For general inquiries</span> <br>csit@uetpeshawar.edu.pk.</h2>
+                    </div>
+                    <div class="ph-number flex gap-8 items-center w-full">
+                        <i class="fa-solid fa-phone fa-2xl dsk max-sm:hidden"></i>
+                        <i class="fa-solid fa-phone fa-md mb hidden max-sm:block"></i>
+                        <h2 class="max-sm:text-[12px]"><span class="ph-span font-medium text-2xl max-sm:text-[14px]">
+                            For urgent matters</span> <br>03xxxxxxxxx.</h2>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+        
+        <!--Form-->
+        <div class="w-full flex justify-center flex-col items-center py-6">
+            <h1 class="text-3xl font-bold max-sm:text-2xl">Have Questions? Let's Talk</h1>
+            
+            <form action="submit" method="post" id="contactForm" class="mt-8 form-div">     
+
+                <label for="name" class="block">Name</label>
+                <input type="name" id="name" name="name" required placeholder="Name" class="text-base leading-6 
+                border justify-center mt-2 p-3 border-solid border-black w-full rounded-md">
+
+                <label for="email" class="block mt-6">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="abc@gmail.com" class="text-base leading-6 
+                border justify-center mt-2 p-3 border-solid border-black w-full rounded-md">
+
+                <label for="subject" class="block mt-6">Subject</label>
+                <input type="subject" id="subject" name="subject" required placeholder="Subject" class="text-base leading-6 
+                border justify-center mt-2 p-3 border-solid border-black w-full rounded-md">
+
+                <label for="message" class="block mt-6">Message</label>
+                <textarea id="message" name="message" cols="30" rows="5" placeholder="Your Message" class="text-base leading-6 
+                border justify-center mt-2 p-3 border-solid border-black 
+                w-[700px] rounded-md max-sm:w-auto max-2xl:w-[550px] max-xl:w-[480px] max-lg:w-[600px]"></textarea>
+        
+                <button type="submit" class="btns-2 block mt-6 bg-black text-white">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+
+            <div class="footer-content">
+                
+                <div class="footer-logo">
+                    <img src="images/footer-logo.png" alt="logo">
+                </div>
+    
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Registration Form</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-socials">
+                    <div><i class="fa-brands fa-facebook fa-lg"></i></div>
+                    <div><i class="fa-brands fa-instagram fa-lg"></i></div>
+                    <div><i class="fa-brands fa-x-twitter fa-lg"></i></div>
+                    <div><i class="fa-brands fa-linkedin fa-lg"></i></div>
+                    <div><i class="fa-brands fa-youtube fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="copyright">
+                <h5>© 2023 Department of CS & IT</h5>
+            </div>
+        </div>
+    </footer>
+        
+    <script src="navbar.js"></script>
+  <script src="./logic.js"></script>
+
+</body>
+</html>

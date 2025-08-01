@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Links-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="navigation">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            </div>
+
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <ul class="ul-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-buttons">
+                    <button type="button" class="btns bg-black text-white" onclick="window.location.href='signup.html'">Sign up</button>
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="dropdown-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button type="button" class="btns " 
+                onclick="window.location.href='login.html'">Log in</button></li>
+            <li><button type="button" class="btns  bg-black text-white" 
+                onclick="window.location.href='signup.html'">Sign up</button></li>
+        </div>
+    </nav>
+
+    <!--Login Form-->
+    <div class="px-16 items-center flex flex-col py-12 max-md:px-5">
+        <div class="text-black text-center text-5xl font-bold leading-[58px] mt-3.5 max-md:max-w-full max-md:text-4xl">
+            Log In
+        </div>
+
+        <div class="text-black text-center text-lg leading-7 max-w-[480px] mt-6 max-md:max-w-full">
+            Welcome back, CSIT alumni! Access your network and relive the memories.
+        </div>
+
+        <form action="submit" id="loginForm" method="post" class="mt-8"> 
+
+            <label for="email" class="block">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="abc@gmail.com" class="text-base 
+            leading-6 border justify-center mt-2 p-3 border-solid border-black w-full max-[550px]:w-[300px] max-[300px]:w-[200px]">
+
+            <label for="password" class="block mt-6">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Password" class="text-base 
+            leading-6 border justify-center mt-2 p-3 border-solid border-black w-full max-[550px]:w-[300px] max-[300px]:w-[200px]">
+
+            <button type="submit" class="btns-2 rounded-md block text-white text-base leading-6  justify-center items-center border
+            bg-black w-[480px] max-w-full mt-6 px-16 py-3 border-solid max-md:px-5 max-[550px]:w-[300px] max-[300px]:w-[200px]">Sign In</button>
+        </form>
+
+        <div class="text-black text-center text-base leading-6 underline mt-6 mb-12 max-md:mb-10">
+            <h3>Forgot your password?</h3>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+
+            <div class="footer-content">
+                
+                <div class="footer-logo">
+                    <img src="images/footer-logo.png" alt="logo">
+                </div>
+    
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Registration Form</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-socials">
+                    <div><i class="fa-brands fa-facebook fa-lg"></i></div>
+                    <div><i class="fa-brands fa-instagram fa-lg"></i></div>
+                    <div><i class="fa-brands fa-x-twitter fa-lg"></i></div>
+                    <div><i class="fa-brands fa-linkedin fa-lg"></i></div>
+                    <div><i class="fa-brands fa-youtube fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="copyright">
+                <h5>© 2023 Department of CS & IT</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+  <script src="./logic.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dept. of CS&IT Alumni</title>
+    <!--Links-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="navigation">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            </div>
+
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <ul class="ul-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li id="profileNav" style="display: none;"><a href="userdashboard.html">My Profile</a></li>
+                    </ul>
+                </div>
+                <div class="nav-buttons">
+            <button id="loginNav" class="btns" onclick="window.location.href='login.html'">Log in</button>
+            <button id="signupNav" class="btns bg-black text-white" onclick="window.location.href='signup.html'">Sign up</button>
+            <button type="button" id="logoutNav" style="display: none;" class="btns bg-black text-white whitespace-nowrap" onclick="window.location.href='login.html'">Logout</button>
+
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+        <div class="flex w-full flex-row items-center gap-10 px-16 py-28 max-md:px-5  max-[1100px]:flex-wrap">
+
+            <div class="header-content flex flex-col items-start gap-6 w-full max-md:items-center">
+                <h1 class="font-bold text-5xl leading-[120%] max-md:max-w-full max-md:text-5xl max-md:leading-[54px] 
+                max-sm:text-center">Department Of CS & IT Peshawar Campus</h1>
+    
+                <p class="text-lg font-normal leading-[150%]">The Department of Computer Science & Information Technology offers undergraduate and graduate courses leading to the award of Bachelor of Science and Master of Science in Computer Science respectively. It owes its emergence to the relentlessly growing demand of professionals with expertise in areas of computers, communications and information processing technologies.
+
+                </p>
+                <h3 class="font-bold text-3xl leading-[120%] max-md:max-w-full max-md:text-5xl max-md:leading-[54px] 
+                max-sm:text-center">Our Mission</h3>
+                <p class="text-lg font-normal leading-[150%]">
+                    To educate undergraduate and graduate majors as well as the broader campus community in the fundamental concepts of the computing disciplines, to create and disseminate computing knowledge and technology, and to use our expertise in computing to help solve societal problems.
+
+                </p>
+        
+            </div>
+    
+    
+            <div class="header-img w-full h-[650px] max-sm:h-[500px]">
+                <img src="./images//userdash.webp" alt="Campus image" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+
+        <div class="ncm flex w-full px-16 py-24 items-start flex-col gap-16 max-md:px-5">
+
+            <div class="section-title flex items-start gap-14 self-stretch w-full max-md:flex-wrap">
+    
+                <div class="heading flex flex-col items-start justify-between gap-4 max-w-[50%] max-md:max-w-full">
+                    <h1 class="text-base font-semibold leading-6">Faculty & Staff Of Computer Science</h1>
+                    <h1 class="text-5xl font-bold leading-[120%]">Meet the Minds Behind Excellence: Faculty and Staff of Computer Science</h1>
+                </div>
+    
+                <div class="heading-content w-1/2 max-md:w-full">
+                    <p class="text-md font-normal">Embark on a journey of discovery with our Computer Science faculty — a dedicated team of industry experts and researchers. With a commitment to excellence, they bring a wealth of knowledge, fostering an environment where students thrive. Guided by passion and expertise, our faculty empowers future tech leaders, shaping the landscape of innovation. Welcome to a dynamic learning experience, where mentorship and cutting-edge insights redefine the possibilities of Computer Science education.</p>
+                </div>
+            </div>
+    
+            <div class="section-content flex flex-start self-stretch gap-12 max-md:flex-wrap">
+    
+                <div class="events flex flex-col items-start gap-6">
+                    <img src="/images/network.png" alt="Networking Events" class="w-12">
+                    <h1 class="font-bold text-2xl leading-[130%]">Chairman</h1>
+                    <p class="text-base font-normal leading-6">Dr. Syed Adeel Ali Shah - Ph.D.(Malaysia)</p>
+                    <h1 class="font-bold text-2xl leading-[130%]">Associate Professors</h1>
+                    <p class="text-base font-normal leading-6">Dr. Iftikhar Ahmad - Ph.D.(Germany)</p>
+                    <p class="text-base font-normal leading-6">Dr. Syed Adeel Ali Shah (Chairman)</p>
+                </div>
+                <div class="career flex flex-col items-start gap-6">
+                    <img src="/images/career.png" alt="Networking Events" class="w-12">
+                    <h1 class="font-bold text-3xl leading-[130%]">Lecturers</h1>
+                    <ul class="text-base font-normal leading-6">
+                        <li>Dr. Zakira Inayat - Ph.D.(Malaysia) </li>
+                        <li>Engr. Ala Uddin - MS(CSE),(Pak.) </li>
+                        <li>Mr. Imran Rasheed - (Ph.D. Study)</li>
+                        <li>Ms. Aisha Javed - MIT(Pak.)</li>
+                        </ul>
+                </div>
+                <!-- <div class="mentor flex flex-col items-start gap-6">
+                    <img src="/images/mentor.png" alt="Networking Events" class="w-12">
+                    <h1 class="font-bold text-3xl leading-[130%]">Internship Programs</h1>
+                    <p class="text-base font-normal leading-6">Internships
+                        Department arranges internship during the summers for practical training of the students. Internships are arranged both in Government and Private sector organizations</p>
+                </div> -->
+            </div>
+
+        </div>
+
+
+        <div class="items-center flex flex-col px-20 py-12 max-md:px-5">
+            <img src="/images/Logo.png" class="max-w-full mt-16 max-md:mt-10" style="max-width: 200px;"/>
+            <div class="text-black text-center text-1xl font-bold leading-9 max-w-screen-md mt-4 max-md:max-w-full">
+                <p>By virtue of its decades-long legacy of being a distinguished public sector engineering university at the National and International level, I feel proud to lead an institution, which is my alma mater. The admissions process for the new academic session (2023-24) has just started after undergoing a complete revamping from a manual to an online operation. It may pose challenges for aspiring candidates who would need to be vigilant and well versed in online submission processes. Rest assured, we are taking all the necessary steps needed to assist you and to ensure that the process goes through seamlessly.</p>
+            </div>
+            <img src="/images/profile.png" class="object-contain object-center w-14 overflow-hidden max-w-full mt-8 rounded-[50%]"/>
+            <div class="text-black text-center text-base font-semibold leading-6 mt-4">
+                <h1>Ahmed Ali</h1>
+            </div>
+            <div class="text-black text-center text-base leading-6 mb-10" >
+                <h5>Software Engineer, Microsoft</h5>
+            </div>
+            </div>
+
+
+        <div class="dropdown-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button type="button" class="btns " 
+                onclick="window.location.href='login.html'">Log in</button></li>
+            <li><button type="button" class="btns  bg-black text-white" 
+                onclick="window.location.href='signup.html'">Sign up</button></li>
+        </div>
+    </nav>
+
+    <!--Main Content Below-->
+
+
+
+
+
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+
+            <div class="footer-content">
+                
+                <div class="footer-logo">
+                    <img src="images/footer-logo.png" alt="logo">
+                </div>
+    
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Registration Form</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-socials">
+                    <div><i class="fa-brands fa-facebook fa-lg"></i></div>
+                    <div><i class="fa-brands fa-instagram fa-lg"></i></div>
+                    <div><i class="fa-brands fa-x-twitter fa-lg"></i></div>
+                    <div><i class="fa-brands fa-linkedin fa-lg"></i></div>
+                    <div><i class="fa-brands fa-youtube fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="copyright">
+                <h5>© 2023 Department of CS & IT</h5>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="navbar.js"></script>
+  <script src="./logic.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const togglebtn = document.querySelector('.toggle-btn');
+  const dropDownNav = document.querySelector('.dropdown-nav');
+
+  togglebtn.onclick = function () {
+    dropDownNav.classList.toggle('open');
+  };
+});
+</script>
+
+
+</body>
+</html>

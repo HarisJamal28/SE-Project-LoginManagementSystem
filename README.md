@@ -1,7 +1,7 @@
 
 # University Alumni Login Management System
 
-This project was developed as a **3rd Semester End of Semester Project** for our **Software Engineering** course. The task was to design, develop, and deploy a **Login Management System** that:
+This project was developed as a **2nd Year End of Semester Project** for our **Software Engineering** course. The task was to design, develop, and deploy a **Login Management System** that:
 
 - Connects to a database
 - Supports **Role-Based Access** (User & Admin)
@@ -16,6 +16,7 @@ This project was developed as a **3rd Semester End of Semester Project** for our
 | Team Lead          | Abdullah Awan      | [@Abdullah-Awan92](https://github.com/Abdullah-Awan92) |
 | Frontend Developer | Faizan Elahi       | [@faaizane](https://github.com/faaizane)               |
 | Backend Developer  | Haris Jamal        | [@HarisJamal28](https://github.com/HarisJamal28)       |
+| Postman Testing    | Ahsen Khalil       |                                                        |
 
 ---
 
@@ -55,8 +56,6 @@ This project was developed as a **3rd Semester End of Semester Project** for our
 ├── index.js                # Main server file
 ├── routes/                 # All route handlers
 ├── models/                 # MongoDB schemas
-├── controllers/            # Logic for route handling
-├── public/                 # Frontend assets (HTML, CSS, JS)
 ├── .env                    # Environment variables (not committed)
 ├── .gitignore              # node_modules, .env
 └── vercel.json             # Vercel deployment config
